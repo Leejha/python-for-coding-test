@@ -1,0 +1,17 @@
+# c11 그리디 312p q2 곱하기 혹은 더하기
+
+S = input()
+
+cal = None
+
+for s in S :
+	s = int(s) 
+	if cal == None :
+		cal = s
+	else :
+		if cal == 0 or cal == 1 or s == 0 or s == 1 :
+			cal = cal + s
+		else : 
+			cal = cal * s
+
+print(cal)
