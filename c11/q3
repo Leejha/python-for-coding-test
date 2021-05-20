@@ -1,0 +1,15 @@
+#c11 그리디 313p q3 문자열 뒤집기
+
+import math
+
+S = input()
+
+sum = 0
+prev = None
+
+for s in S :
+	if prev != s :
+		prev = s
+		sum += 1
+
+print(math.floor(sum/2)
