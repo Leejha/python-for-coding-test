@@ -1,0 +1,13 @@
+#c11 그리디 313p q5 볼링공 고르기
+
+N = int(input())
+ls = list(map(int, input().split()))
+
+sum = 0
+
+for i in range(len(ls)) : 
+	for j in range(i + 1, len(ls) ) :
+		if ls[j] != ls [i] : 
+			sum +=1
+
+print(sum)
